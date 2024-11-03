@@ -1,0 +1,8 @@
+org/example/model/UniteEnseignement.class
+org/example/Main.class
+org/example/view/UniteEnseignementGUI.class
+org/example/view/UniteEnseignementView.class
+org/example/view/UniteEnseignementGUI$1.class
+org/example/dao/UniteEnseignementDAO.class
+org/example/controller/UniteEnseignementController.class
+org/example/DatabaseConnection.class
