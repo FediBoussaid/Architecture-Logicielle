@@ -41,7 +41,13 @@ public class PersonneDAO {
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, id);
-            stmt.executeUpdate();
+            int rowsAffected = stmt.executeUpdate();
+
+            if (rowsAffected == 0) {
+                System.out.println("Aucun enregistrement trouvé avec cet ID.");
+            } else {
+                System.out.println("Personne supprimée avec succès.");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
